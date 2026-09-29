@@ -18,12 +18,19 @@ The example uses the included page and shows the expected MCP result.
 | Work within a frame | `frame_list`, `frame_enter`, `frame_leave` |
 | Capture or compose actions | `page_capture`, `workflow_batch`, `workflow_steps` |
 
-[Hosted Release run 36091983364](https://github.com/dhtfish-98/ChromeRelay/actions/runs/36091983364)
-passed 1,533 checks at commit `9f585b4c357fd2aa97cd450a4478c3cefdbdb866` on macOS
-arm64 / Chrome 152.0.7977.83. [Its summary](validation/hosted-run-2026-09-25.json)
-separates installed CLI checks and the catalog-only library consumer. An earlier
-intermittent transformed-frame hover timeout remains an open investigation;
-this successful run does not establish its cause or a production fix.
+The current local Release review passed **1,556 checks**, plus 28 installed CLI
+checks, on macOS arm64. Debug and ASan/UBSan each passed the 289 affected checks,
+not the full matrix. Those runs attach to real Chrome with temporary profiles and
+owned pages. They do not cover arbitrary websites or an existing personal profile.
+The record is [the protocol review](validation/protocol-review-2026-09-25.json).
+
+An earlier hosted Release run,
+[36091983364](https://github.com/dhtfish-98/ChromeRelay/actions/runs/36091983364),
+passed 1,533 checks at commit `9f585b4c357fd2aa97cd450a4478c3cefdbdb866` on
+Chrome 152.0.7977.83. [Its summary](validation/hosted-run-2026-09-25.json)
+separates installed CLI checks and the catalog-only library consumer. That commit
+predates the port-precedence and request-shape fixes. An intermittent
+transformed-frame hover timeout remains open; neither run establishes its cause.
 
 ```sh
 cmake --preset release
@@ -63,11 +70,10 @@ server exits by disconnecting; it does not close your browser. Repeated
   file limits, composition, deadlines and side effects.
 - [CHECKPOINT.md](docs/CHECKPOINT.md): measured acceptance and exact boundaries.
 
-The later [MCP and CLI review](validation/protocol-review-2026-09-25.json) passed
-**1,556 checks in Release**, plus 28 installed CLI checks. It fixes port-value
+The 1,556-check result above is the current local review. It fixes port-value
 precedence and validates MCP request shapes without conflating protocol errors
-with tool execution errors. Debug and ASan/UBSan each passed the 289 affected
-checks; their full matrices were not repeated for these changes.
+with tool execution errors. The 1,533-check figure is the earlier full matrix,
+including the hosted run, and is not the current total.
 
 The earlier 2026-09-25 follow-up passed **1,533 checks** in each of Debug, Release and
 ASan/UBSan: 155 contracts, 1,146 actual Chrome/MCP checks and 232 socket/keyboard
