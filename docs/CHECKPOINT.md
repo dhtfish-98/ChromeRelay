@@ -118,11 +118,6 @@ MachOInspect and A64Dispatch retain their accepted local deliveries.
 
 ## Current implementation
 
-- Functional baseline: UltimateBrowserJS commit
-  `133797d29cedf19b40f5cdcdcf4aac80a9b4941d`. All three original Git checkouts remain clean.
-- Baseline isolated Node v25.9.0: 24 checks, zero failures; stub browser tests.
-  The original server also ran against an owned Chrome with Playwright 1.50.0;
-  29 observed evaluation vectors now anchor the native compatibility test.
 - C++20 native library/executable; Boost 1.92.0 Beast/Asio and nlohmann/json 3.12.0.
   No Node or Playwright production runtime. Minimal DOM adaptation is embedded
   from `resources/dom_agent.js`, without installing persistent page globals.
@@ -307,7 +302,7 @@ report. It compiles production JSON/CDP/catalog/MCP/framing code; its handler
 returns normalized data without browser actions. The corpus, manifest and
 limits are described in `docs/WIRE_AND_FUZZ.md`.
 
-Evidence under `../../evidence/UltimateBrowserJS/`:
+Evidence under `../../evidence/local-records/`:
 
 - `build-delivery-{debug,release,sanitize}.txt`, `tests-delivery-{debug,release,sanitize}.txt`.
 - `delivery-{debug,release,sanitize}-browser-final/`: per-program stdout/stderr, owned-browser receipt and
@@ -336,7 +331,7 @@ Evidence under `../../evidence/UltimateBrowserJS/`:
 cmake --preset release
 cmake --build --preset release
 ctest --preset release --verbose
-python3 tests/integration/run_suite.py --build build/release --evidence ../evidence/UltimateBrowserJS/delivery-release
+python3 tests/integration/run_suite.py --build build/release --evidence ../evidence/local-records/delivery-release
 ```
 
 Sanitize uses `/opt/homebrew/opt/llvm/bin/clang++` and the corresponding preset and

@@ -74,11 +74,11 @@ Socket injection does not substitute for the separate real-browser event tests.
 
 ```sh
 cmake --build --preset debug
-python3 tests/integration/with_chrome.py --evidence ../evidence/UltimateBrowserJS/keyboard-example build/debug/relay-keyboard-tests
-python3 tests/integration/keyboard_fixture.py --binary build/debug/relay-keyboard-fault-tests --evidence ../evidence/UltimateBrowserJS/keyboard-fault-example
+python3 tests/integration/with_chrome.py --evidence ../evidence/local-records/keyboard-example build/debug/relay-keyboard-tests
+python3 tests/integration/keyboard_fixture.py --binary build/debug/relay-keyboard-fault-tests --evidence ../evidence/local-records/keyboard-fault-example
 ```
 
-Baseline receipts are under `../../evidence/UltimateBrowserJS/keyboard-baseline/`
+Baseline receipts are under `../../evidence/local-records/keyboard-baseline/`
 and `keyboard-effects-baseline-final/`. The initial native editor test expected
 a keypad digit to be inserted; the actual baseline proved it is a navigation key
 on this host. The initial fault fixture also incorrectly rejected Control down

@@ -47,7 +47,7 @@ ASan/UBSan and ThreadSanitizer.
 It adds moving/replaced/animated targets, native AX role reacquisition, new
 overlays/disabled controls, no replay after press, long-press deadline cleanup,
 shadow overlays, moving cross-process frame owners and independent tab closure.
-Records live under `../../evidence/UltimateBrowserJS/`:
+Records live under `../../evidence/local-records/`:
 
 - `click-baseline/` and `css-list-baseline-final/`: original-server observations.
 - `click-before-native/`: old native code times out for empty text, hovers before

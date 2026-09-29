@@ -26,7 +26,7 @@ Binary WebSocket messages are refused rather than interpreted as CDP text.
 
 This fixes an actual reproduced defect: a response with ID `1.5` was converted
 to integer `1` and satisfied request 1. The pre-fix failure and owned peer
-receipt are retained in `../../evidence/UltimateBrowserJS/wire-fractional-before/`.
+receipt are retained in `../../evidence/local-records/wire-fractional-before/`.
 After strict decoding, the same input fails the call and closes the connection.
 
 Ordinary structured CDP errors affect their request and leave the channel
@@ -98,7 +98,7 @@ cmake --preset debug
 cmake --build --preset debug
 python3 tests/integration/wire_fixture.py \
   --binary build/debug/relay-wire-fault-tests \
-  --evidence ../evidence/UltimateBrowserJS/wire-debug-accepted-final
+  --evidence ../evidence/local-records/wire-debug-accepted-final
 ```
 
 ## Bounded fuzz run

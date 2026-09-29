@@ -1,12 +1,7 @@
 # Sources and dependencies
 
 New C++ implementation: copyright 2026 dhtfish98, MIT licensed.
-Functional baseline and compatibility schemas: UltimateBrowserJS commit
-`133797d29cedf19b40f5cdcdcf4aac80a9b4941d`, copyright dhtfish988, MIT.
-Its original license is preserved in licenses/UltimateBrowserJS-MIT.txt.
-
-The compatibility parameter shapes were derived from that public baseline.
-Native implementations, architecture and public canonical names are new work.
+Native implementations, architecture and public canonical names are in this repository.
 Browser-executed DOM expressions will remain minimal protocol adapters where
 page-side JavaScript is necessary; they will not host the main workflow logic.
 

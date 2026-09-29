@@ -46,9 +46,7 @@ tests and licenses initially retained their accepted bytes. Subsequent Git commi
 record later fixes; this manifest is historical and does not describe the current checkout. The initial Git commit records
 publication; it does not manufacture a prior development history.
 
-The functional baseline is `UltimateBrowserJS`. Its exact commit and retained attribution
-are documented in the project notices. That historical repository may be private;
-licenses and source provenance remain available here.
+
 
 Each historical 2026-09-23 full suite included 155 contracts, 1,100 real Chrome/MCP checks and 232 socket
 fault checks. Historical selected TSan coverage: 549 checks. All 75 legacy names were called.

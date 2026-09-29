@@ -70,7 +70,7 @@ after its OOP session detached: detachment arrived about 557 ms after submission
 the replacement context about 562 ms, but the old code waited until the 1500 ms
 timeout. Its following evaluation saw the replacement marker. This explains a
 concrete lost-context failure mode; it does not prove every historical timeout
-had the same cause. Records are in `../../evidence/UltimateBrowserJS/swap-wait-before/`.
+had the same cause. Records are in `../../evidence/local-records/swap-wait-before/`.
 The trace build is isolated under `.work`; production diagnostics remain argument-free.
 
 `relay-condition-tests` adds 19 actual-browser checks: pending promises across root
@@ -124,4 +124,4 @@ fault evidence. The experimental reload `loaderId` guard is tested with Chrome
 
 Protocol reference: [Chrome DevTools Page domain](https://chromedevtools.github.io/devtools-protocol/tot/Page/).
 The corresponding official JSON definitions used for this work are saved in
-`../../evidence/UltimateBrowserJS/navigation-protocol-reference.json`.
+`../../evidence/local-records/navigation-protocol-reference.json`.

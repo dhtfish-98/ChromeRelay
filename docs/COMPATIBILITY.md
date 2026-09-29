@@ -8,14 +8,9 @@ is chosen by the name actually called, including each workflow child; a JSON
 argument cannot turn compatibility on. The default process accepts canonical
 names only. The table below maps every legacy entry to the new API.
 
-The reference is UltimateBrowserJS commit
-`133797d29cedf19b40f5cdcdcf4aac80a9b4941d`. Besides its 24 isolated stub tests,
-the original server was actually run with Node v25.9.0, Playwright 1.50.0 and an
-owned Chrome 153.0.8010.53 profile. Its server SHA-256 was
-`46ef2766deeaf4db36de0bf044653b755cc4d88cd642d93ed48ffc0bf606fd4e`.
-The new executable does not load Playwright or Node. Isolated baseline probes
-use both; two embedded keyboard mapping resources retain Playwright's Apache-2.0
-attribution. See `THIRD_PARTY_NOTICES.md` and [KEYBOARD.md](KEYBOARD.md).
+The new executable does not load Playwright or Node. Two embedded keyboard
+mapping resources keep Playwright's Apache-2.0 license. See
+`THIRD_PARTY_NOTICES.md` and [KEYBOARD.md](KEYBOARD.md).
 
 ## Result and behavior contracts
 
@@ -126,12 +121,12 @@ evidence and declared subtype/failure boundaries.
 and result vectors. `relay-input-target-tests` checks their values/results in
 fast, slow and human modes (including canonical and legacy names), plus selected
 same-origin/cross-origin frame isolation: 97 checks. Baseline receipts are in
-`../../evidence/UltimateBrowserJS/input-targets-baseline/`. The native
+`../../evidence/local-records/input-targets-baseline/`. The native
 `input-target-debug-before/` receipt proves the pre-fix selector/index precedence
 error; current acceptance is recorded in [CHECKPOINT.md](CHECKPOINT.md).
 
 Original live probe receipts and outputs are under
-`../../evidence/UltimateBrowserJS/compatibility-baseline-probe/` and
+`../../evidence/local-records/compatibility-baseline-probe/` and
 `compatibility-baseline-extended/`. Every probe used only an owned temporary
 Chrome profile and local fixture server. Native run evidence includes complete
 MCP stdout/stderr and a `coverage.json` with each called name and check label.

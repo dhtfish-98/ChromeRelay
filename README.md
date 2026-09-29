@@ -2,7 +2,7 @@
 
 **ChromeRelay 1.0.0** is a C++20 MCP-to-Chrome DevTools bridge. It connects to an
 existing loopback Chrome and provides 54 canonical browser actions or 75 legacy
-UltimateBrowserJS names. Native transport, sessions, navigation, inputs, files,
+names. Native transport, sessions, navigation, inputs, files,
 workflows and cancellation run without a Node or Playwright runtime. Small
 embedded JavaScript adapters handle DOM access and browser-side value conversion.
 
@@ -98,17 +98,11 @@ extended Playwright selectors and every possible parameter combination are not
 claimed equivalent. Drag is within one selected document; snapshots explicitly
 use native `ax-yaml`. See the linked guides before migrating a caller.
 
-Functional baseline: UltimateBrowserJS commit
-`133797d29cedf19b40f5cdcdcf4aac80a9b4941d` (MIT). That project's 24 isolated tests
-used a stub browser and are historical evidence only. ChromeRelay connects to a
-Chrome debug port and can run page script and read or change cookies and storage.
-The checks recorded here used temporary profiles on macOS. They do not cover
-arbitrary pages. Old-server probes supply 29 evaluation, 30 keyboard, 15
-input-target, 28 click and 16 CSS vectors for the rewrite.
+ChromeRelay connects to a Chrome debug port and can run page script and read or
+change cookies and storage. The checks recorded here used temporary profiles on
+macOS. They do not cover arbitrary pages.
 
-New implementation copyright 2026 dhtfish98, MIT. Original attribution and
-all dependency license texts are retained in `LICENSE`, `THIRD_PARTY_NOTICES.md`
-and `licenses/`. Embedded Playwright keyboard mapping data retains Apache-2.0
-attribution; it is not newly authored mapping data or a runtime dependency.
+Copyright 2026 dhtfish98, MIT. Embedded Playwright keyboard mapping data keeps its
+Apache-2.0 license. It is not newly authored mapping data or a runtime dependency.
 
 Local validation and publication scope: [validation/README.md](validation/README.md).
