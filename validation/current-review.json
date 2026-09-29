@@ -164,14 +164,14 @@
       "sha256": "034d1e71fd58077fb1a0b6d22318328c2bfd84b164447425b3c458bbc78dadd7"
     }
   },
-  "hosted_ci_url": "https://github.com/dhtfish988/ChromeRelay/actions/workflows/verify.yml",
+  "hosted_ci_url": "https://github.com/dhtfish-98/ChromeRelay/actions/workflows/verify.yml",
   "hosted_ci_note": "Check the Actions result for the exact Git commit; local results do not imply a hosted run passed.",
   "new_checks": 46,
   "local_launch_observation": "The first installed CLI check timed out at --version during concurrent validation. Two separate version calls immediately completed in 0.009 seconds each, and the unchanged full CLI suite then passed 17 checks. The transient delay was not attributed to a proven cause; no timeout was increased.",
   "test_synchronization_followup": {
     "production_commit": "8075d5859012ebcd93a9f94bde0dc814eff2d6ee",
     "scope": "Only the page-services test synchronization and documentation changed after the full 1,533-check local matrices above. Production code is unchanged. The revised 55-check service program was then rebuilt and rerun in the four cases below; the full local matrices were not repeated.",
-    "failed_hosted_run": "https://github.com/dhtfish988/ChromeRelay/actions/runs/36088384775",
+    "failed_hosted_run": "https://github.com/dhtfish-98/ChromeRelay/actions/runs/36088384775",
     "diagnostic": "A controlled virtual-time pause reproduced an outstanding highlight timer after 181 ms on the client clock in Chrome 152 and 153; advancing renderer time restored the original outline and important priority. This demonstrates why a client sleep is not callback completion; the original hosted failure did not record sufficient state to establish its exact scheduling cause.",
     "change": "Observe real lease expiry with a bounded wait and preserve strict outline and priority checks. Separately invoke captured production cleanup callbacks in deterministic order to check stale-callback ownership and page edits; report styles, lease, visibility and browser clock on failure.",
     "checks": [
@@ -216,7 +216,7 @@
   "full_local_matrix_production_commit": "8075d5859012ebcd93a9f94bde0dc814eff2d6ee",
   "deadline_test_followup": {
     "scope": "Test-only follow-up after c997356; production code remains identical to the complete local matrix at 8075d5859012. No full local matrix rerun for these test changes.",
-    "failed_hosted_run": "https://github.com/dhtfish988/ChromeRelay/actions/runs/36089509980",
+    "failed_hosted_run": "https://github.com/dhtfish-98/ChromeRelay/actions/runs/36089509980",
     "cloud_limit": "The failed click assertion did not record actual input counts or the exception; the exact cloud cause remains unresolved.",
     "controlled_probe": "On Chrome 152 and 153, a 600 ms animation-frame preparation delay made the old 400 ms action expire before any input. The normal allowance reaches one trusted press/release and the expected missing-acknowledgement error. This establishes an ambiguous test precondition, not the original cloud scheduling cause.",
     "changes": {
@@ -286,7 +286,7 @@
   },
   "capture_fixture_followup": {
     "scope": "Owned capture fixture styling and test diagnostics only. Production code and all exact dimensions/pixel assertions are unchanged; full local production matrices remain the earlier 1533-check runs.",
-    "failed_hosted_run": "https://github.com/dhtfish988/ChromeRelay/actions/runs/36090429764",
+    "failed_hosted_run": "https://github.com/dhtfish-98/ChromeRelay/actions/runs/36090429764",
     "cloud_observation": "Viewport and full-page PNGs and their metadata agreed on width 785 rather than expected 800; element, scrolled and DPR2 captures had expected dimensions. Original cloud layout metrics were not recorded.",
     "controlled_probe": "Across Chrome 152 and 153, explicit 15-pixel scrollbars yield a valid 785-pixel CSS content viewport in an 800-pixel window; PNG dimensions follow these metrics at DPR1 and DPR2. scrollbar-width:none preserves scrolling and the intended 800-pixel fixture geometry.",
     "protocol_source": "https://raw.githubusercontent.com/ChromeDevTools/devtools-protocol/master/json/browser_protocol.json",
@@ -352,7 +352,7 @@
   },
   "diagnostic_followup": {
     "scope": "Tests and harness diagnostics only; production code unchanged. No hover fix claimed.",
-    "failed_hosted_run": "https://github.com/dhtfish988/ChromeRelay/actions/runs/36091196176",
+    "failed_hosted_run": "https://github.com/dhtfish-98/ChromeRelay/actions/runs/36091196176",
     "unresolved": "One hosted transformed-frame hover did not receive its mousemove acknowledgement. The actual event and routing state were not recorded in that run. Local original sequences and repeated same-coordinate hovers passed on Chrome 152/153, so a same-coordinate failure was not established.",
     "change": "Keep the exact deadline and receipt requirement; record before/after geometry, hover state and actual events on failure. Collect all independent program and socket-group failures while preserving nonzero final status and cleanup.",
     "harness_review": "harness-review.json",

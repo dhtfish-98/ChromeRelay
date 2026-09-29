@@ -18,7 +18,7 @@ The example uses the included page and shows the expected MCP result.
 | Work within a frame | `frame_list`, `frame_enter`, `frame_leave` |
 | Capture or compose actions | `page_capture`, `workflow_batch`, `workflow_steps` |
 
-[Hosted Release run 36091983364](https://github.com/dhtfish988/ChromeRelay/actions/runs/36091983364)
+[Hosted Release run 36091983364](https://github.com/dhtfish-98/ChromeRelay/actions/runs/36091983364)
 passed 1,533 checks at commit `9f585b4c357fd2aa97cd450a4478c3cefdbdb866` on macOS
 arm64 / Chrome 152.0.7977.83. [Its summary](validation/hosted-run-2026-09-25.json)
 separates installed CLI checks and the catalog-only library consumer. An earlier

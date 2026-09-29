@@ -12,7 +12,7 @@ The historical full matrices and hosted runs below predate these changes.
 
 Hosted Release verification also passed at commit
 `9f585b4c357fd2aa97cd450a4478c3cefdbdb866` in
-[run 36091983364](https://github.com/dhtfish988/ChromeRelay/actions/runs/36091983364):
+[run 36091983364](https://github.com/dhtfish-98/ChromeRelay/actions/runs/36091983364):
 155 CTest checks, 1,146 browser/MCP checks in 23 programs and 232 fault checks
 (1,533 total), plus 17 installed CLI checks. The hosted library consumer built
 and checked the catalog; it did **not** run the seven live consumer checks.
@@ -60,7 +60,7 @@ Chrome 153 profiles were cleaned up. See `docs/CHECKPOINT.md`.
 
 - [Machine-readable review result](current-review.json) and [sanitized test transcripts](review-2026-09-25/).
 - [CMake 3.24 preset compatibility result](current-review-build.json).
-- [GitHub macOS verification](https://github.com/dhtfish988/ChromeRelay/actions/workflows/verify.yml) builds Release, runs native and owned-browser tests, installs the package and exercises an independent consumer. Read the result for the exact commit; a workflow file alone is not a successful run.
+- [GitHub macOS verification](https://github.com/dhtfish-98/ChromeRelay/actions/workflows/verify.yml) builds Release, runs native and owned-browser tests, installs the package and exercises an independent consumer. Read the result for the exact commit; a workflow file alone is not a successful run.
 
 The original 1.0.0 archives remain historical artifacts. Use the current Git commit
 for these fixes. This review did not repeat the historical TSan and fuzz runs.
