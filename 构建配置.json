@@ -1,0 +1,322 @@
+{
+  "schema": "project-build-layout.v1",
+  "project": "ChromeRelay",
+  "author": "dhtfish98",
+  "kind": "cmake",
+  "base_public_commit": "881013d86710516426aed7d48f61c1782dfa73f7",
+  "restored_inputs": [
+    {
+      "original": "LICENSE",
+      "stored": "项目文档/LICENSE",
+      "sha256": "de926d6c22d9e061af6158b0f23146ce036bfb2a562f2f406acec2dc4bd8b298"
+    },
+    {
+      "original": "README.md",
+      "stored": "项目文档/README.md",
+      "sha256": "4d441b16120a8be76d7c3c454e144418e66c109dddc892cd611fd254e5eb9832"
+    },
+    {
+      "original": "THIRD_PARTY_NOTICES.md",
+      "stored": "项目文档/THIRD_PARTY_NOTICES.md",
+      "sha256": "687b5fb5f16e9e8fef52de1232707c76def3526401014bcbde8bea9164b0f611"
+    },
+    {
+      "original": "docs/CANCELLATION.md",
+      "stored": "项目文档/docs/CANCELLATION.md",
+      "sha256": "ac6349619b9ee4229ab9cd256f9e964554c80d11ccdd442efad8223d2a94533e"
+    },
+    {
+      "original": "docs/CHECKPOINT.md",
+      "stored": "项目文档/docs/CHECKPOINT.md",
+      "sha256": "156f21de284a1d6dc290b7eaaaf976398a4b2a36b513835d2473d3aa99e363b0"
+    },
+    {
+      "original": "docs/CLICKS.md",
+      "stored": "项目文档/docs/CLICKS.md",
+      "sha256": "ba9ff12d6b1f00563214d73802fae04364355cf55040e813ac25250e3059e1df"
+    },
+    {
+      "original": "docs/COMPATIBILITY.md",
+      "stored": "项目文档/docs/COMPATIBILITY.md",
+      "sha256": "828e140bf19a9aaf5652803fce69720528a56ebcd68a7f30fae4fd27308450db"
+    },
+    {
+      "original": "docs/FILES_AND_CAPTURE.md",
+      "stored": "项目文档/docs/FILES_AND_CAPTURE.md",
+      "sha256": "a8aacab6445784f55cff76ad5f42c40758f2d7353c5173a1a4447b9c9e076f3a"
+    },
+    {
+      "original": "docs/FRAMES.md",
+      "stored": "项目文档/docs/FRAMES.md",
+      "sha256": "585f80496c03b3bb538dba34f9cb00a6fcf2d355f800d31a295f16d9d41487cb"
+    },
+    {
+      "original": "docs/GETTING_STARTED.md",
+      "stored": "项目文档/docs/GETTING_STARTED.md",
+      "sha256": "c56da276518d5324185fcb89f4e90eb0eb858d819a807522c9bfeaace637a33d"
+    },
+    {
+      "original": "docs/KEYBOARD.md",
+      "stored": "项目文档/docs/KEYBOARD.md",
+      "sha256": "031ec0c739aa738a148b7a03441825e4749c0a9097a2d890a81831c11a44e218"
+    },
+    {
+      "original": "docs/LOCAL_WORKFLOW.md",
+      "stored": "项目文档/docs/LOCAL_WORKFLOW.md",
+      "sha256": "51bc6cc3fe336269e8ab54ee8b59620abfde6f6c2328d1bc097be8860187ea5b"
+    },
+    {
+      "original": "docs/NAVIGATION.md",
+      "stored": "项目文档/docs/NAVIGATION.md",
+      "sha256": "2bd6e5b61064cc69188e758fa90d5ce12ad94e3609b052f68992d83ae3dd5f42"
+    },
+    {
+      "original": "docs/PAGE_SERVICES.md",
+      "stored": "项目文档/docs/PAGE_SERVICES.md",
+      "sha256": "764ac2d0295ac3d43adf81ccd7f2bb5661fe95ed0c253a0a78728cb464a89069"
+    },
+    {
+      "original": "docs/WIRE_AND_FUZZ.md",
+      "stored": "项目文档/docs/WIRE_AND_FUZZ.md",
+      "sha256": "2f88394a93567e4620b0e43eb6b0b5cb95f4687c5b65d81ce598ef9928227d3d"
+    },
+    {
+      "original": "docs/WORKFLOWS.md",
+      "stored": "项目文档/docs/WORKFLOWS.md",
+      "sha256": "83b6700737ecc308a870aa5328d15039cf5373d7296103befa64abef43a74a3d"
+    },
+    {
+      "original": "licenses/Boost-BSL-1.0.txt",
+      "stored": "项目文档/licenses/Boost-BSL-1.0.txt",
+      "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566"
+    },
+    {
+      "original": "licenses/Playwright-Apache-2.0.txt",
+      "stored": "项目文档/licenses/Playwright-Apache-2.0.txt",
+      "sha256": "45873d00a0dd243596deb4aa23b2493b3d1f0671921bf2538ea431d7380220eb"
+    },
+    {
+      "original": "licenses/Playwright-NOTICE.txt",
+      "stored": "项目文档/licenses/Playwright-NOTICE.txt",
+      "sha256": "6d602191187b35b9b01d2cffa01c8469c2c8d9de8a96f1bf868e0f264f51c81d"
+    },
+    {
+      "original": "licenses/UltimateBrowserJS-MIT.txt",
+      "stored": "项目文档/licenses/UltimateBrowserJS-MIT.txt",
+      "sha256": "1a7f8b0d98b0eac14447cdd09a6dbf649966fba78aa33a45fea6266ed21ade3e"
+    },
+    {
+      "original": "licenses/nlohmann-json-MIT.txt",
+      "stored": "项目文档/licenses/nlohmann-json-MIT.txt",
+      "sha256": "46a65cffd1ea955132d95a8dd921640714a8d6b537d2e4e482d31145ae95b603"
+    },
+    {
+      "original": "validation/README.md",
+      "stored": "项目文档/validation/README.md",
+      "sha256": "d354ce155803eeed463a8a7c851d2b44567205f421520f0f7605cb122200c545"
+    },
+    {
+      "original": "validation/current-review-build.json",
+      "stored": "项目文档/validation/current-review-build.json",
+      "sha256": "6cdc8e76bf0070f836431be6a0019a9f04d80dcd0a146a3aa68a142410c905ea"
+    },
+    {
+      "original": "validation/current-review.json",
+      "stored": "项目文档/validation/current-review.json",
+      "sha256": "5cde77768ecd3a44710b3dcfeed8b60824ca279b3da7eb897dea2fc2397417c9"
+    },
+    {
+      "original": "validation/harness-review.json",
+      "stored": "项目文档/validation/harness-review.json",
+      "sha256": "a0df088ba2a84b89fa2969a9aa74f6c705fb1126ae339756f66f470946367b6f"
+    },
+    {
+      "original": "validation/hosted-run-2026-09-25.json",
+      "stored": "项目文档/validation/hosted-run-2026-09-25.json",
+      "sha256": "4f4e96bea5293b8dfb7b33c689db7b6928430da45b7c7f5ae8acf64efbcbf26a"
+    },
+    {
+      "original": "validation/local-source-manifest.json",
+      "stored": "项目文档/validation/local-source-manifest.json",
+      "sha256": "1aeedfd704c988d4426f0681739c9912edc89ca836270452763a375bf0f0bf9e"
+    },
+    {
+      "original": "validation/protocol-review-2026-09-25.json",
+      "stored": "项目文档/validation/protocol-review-2026-09-25.json",
+      "sha256": "e15a793630edda2e77e35782ce15f6722fc39320a1577bdf2f95dbd0feda826f"
+    },
+    {
+      "original": "validation/protocol-review-2026-09-25/cli-debug.txt",
+      "stored": "项目文档/validation/protocol-review-2026-09-25/cli-debug.txt",
+      "sha256": "2fe38f2366faaa140411a4a8c9165e66e58f05e49338de1dc5a3c7d406ffe04d"
+    },
+    {
+      "original": "validation/protocol-review-2026-09-25/cli-release.txt",
+      "stored": "项目文档/validation/protocol-review-2026-09-25/cli-release.txt",
+      "sha256": "2fe38f2366faaa140411a4a8c9165e66e58f05e49338de1dc5a3c7d406ffe04d"
+    },
+    {
+      "original": "validation/protocol-review-2026-09-25/cli-sanitize.txt",
+      "stored": "项目文档/validation/protocol-review-2026-09-25/cli-sanitize.txt",
+      "sha256": "2fe38f2366faaa140411a4a8c9165e66e58f05e49338de1dc5a3c7d406ffe04d"
+    },
+    {
+      "original": "validation/protocol-review-2026-09-25/consumer-catalog.txt",
+      "stored": "项目文档/validation/protocol-review-2026-09-25/consumer-catalog.txt",
+      "sha256": "b5b1f236bc0864f8a5662b6f44002c37d8d55e50255ec0b8cbba000a07c3bf86"
+    },
+    {
+      "original": "validation/protocol-review-2026-09-25/contracts-debug.txt",
+      "stored": "项目文档/validation/protocol-review-2026-09-25/contracts-debug.txt",
+      "sha256": "986b503bce9c7c4a07d75f797bc29dd36435d5b215ee4ee7f9c6b89e77ebed0b"
+    },
+    {
+      "original": "validation/protocol-review-2026-09-25/contracts-release.txt",
+      "stored": "项目文档/validation/protocol-review-2026-09-25/contracts-release.txt",
+      "sha256": "74c86e1a2c1371bf1a2d3a833adfb4ef4b47d754b01b1d6cf2dbbcde8c836839"
+    },
+    {
+      "original": "validation/protocol-review-2026-09-25/contracts-sanitize.txt",
+      "stored": "项目文档/validation/protocol-review-2026-09-25/contracts-sanitize.txt",
+      "sha256": "3df2497d78192bc61f5ee66b077cb3507dcbd2ea38d0fba1887f45ceb97b095f"
+    },
+    {
+      "original": "validation/protocol-review-2026-09-25/debug-browser.txt",
+      "stored": "项目文档/validation/protocol-review-2026-09-25/debug-browser.txt",
+      "sha256": "0f519bd5e2d5b5e6641c964361d7a1b561553efbf6a34a9742d5d758ce62b288"
+    },
+    {
+      "original": "validation/protocol-review-2026-09-25/debug-cleanup.json",
+      "stored": "项目文档/validation/protocol-review-2026-09-25/debug-cleanup.json",
+      "sha256": "0dc9d3874d57bc405e5e5cd68d7aad33bc2fdd8ceacac00dbc32cbaccd52b899"
+    },
+    {
+      "original": "validation/protocol-review-2026-09-25/fault-summary.json",
+      "stored": "项目文档/validation/protocol-review-2026-09-25/fault-summary.json",
+      "sha256": "42d35d83a2ee92c686d737e1a1ff1baa925f7abdccd8137b9c05e04df9d62c4d"
+    },
+    {
+      "original": "validation/protocol-review-2026-09-25/release-browser.txt",
+      "stored": "项目文档/validation/protocol-review-2026-09-25/release-browser.txt",
+      "sha256": "912a1d379832d0d1c8303eece2b1bbc43d543a71afb3b3374fa436766d2e63f8"
+    },
+    {
+      "original": "validation/protocol-review-2026-09-25/release-cleanup.json",
+      "stored": "项目文档/validation/protocol-review-2026-09-25/release-cleanup.json",
+      "sha256": "2b39a994b8bf39b644c4f2f8c1af7e7d14fe89f059fee2fbca5dccd3aeae0734"
+    },
+    {
+      "original": "validation/protocol-review-2026-09-25/sanitize-browser.txt",
+      "stored": "项目文档/validation/protocol-review-2026-09-25/sanitize-browser.txt",
+      "sha256": "0f519bd5e2d5b5e6641c964361d7a1b561553efbf6a34a9742d5d758ce62b288"
+    },
+    {
+      "original": "validation/protocol-review-2026-09-25/sanitize-cleanup.json",
+      "stored": "项目文档/validation/protocol-review-2026-09-25/sanitize-cleanup.json",
+      "sha256": "0dc9d3874d57bc405e5e5cd68d7aad33bc2fdd8ceacac00dbc32cbaccd52b899"
+    },
+    {
+      "original": "validation/protocol-review-2026-09-25/wire-summary.json",
+      "stored": "项目文档/validation/protocol-review-2026-09-25/wire-summary.json",
+      "sha256": "8c7fc4be9ba544f32f347479d712c33f7141b12b0a82cc96b11f577b8a6b1ecd"
+    },
+    {
+      "original": "validation/review-2026-09-25/capture-debug153.txt",
+      "stored": "项目文档/validation/review-2026-09-25/capture-debug153.txt",
+      "sha256": "753cb65654ca4f95dccca6af19efe382a36e8248acaa75dce5dcabb46ccd7efe"
+    },
+    {
+      "original": "validation/review-2026-09-25/capture-release152.txt",
+      "stored": "项目文档/validation/review-2026-09-25/capture-release152.txt",
+      "sha256": "ba8d923cdbf388bb363d1250e70634fcae5db427a9deac357f4dd8c6a9c69174"
+    },
+    {
+      "original": "validation/review-2026-09-25/capture-release153.txt",
+      "stored": "项目文档/validation/review-2026-09-25/capture-release153.txt",
+      "sha256": "794c061a4674da4a6730f4bf2c04d7ede3251602ac3473787d258f9527f742e7"
+    },
+    {
+      "original": "validation/review-2026-09-25/capture-sanitize153.txt",
+      "stored": "项目文档/validation/review-2026-09-25/capture-sanitize153.txt",
+      "sha256": "7a22281c9a6a9e4632409a3db99ed03122e4192e977dd9aa8fffc9178de49931"
+    },
+    {
+      "original": "validation/review-2026-09-25/deadline-debug153.txt",
+      "stored": "项目文档/validation/review-2026-09-25/deadline-debug153.txt",
+      "sha256": "7bab0dfd90d79de19883713c37aa21ff6ebbd7e89e8dcc44da0a7a5e83868c7f"
+    },
+    {
+      "original": "validation/review-2026-09-25/deadline-release152.txt",
+      "stored": "项目文档/validation/review-2026-09-25/deadline-release152.txt",
+      "sha256": "8f3a69400ccccc86c0a28270a9339036c393a923b0779a6f8f5bf360306236fc"
+    },
+    {
+      "original": "validation/review-2026-09-25/deadline-release153.txt",
+      "stored": "项目文档/validation/review-2026-09-25/deadline-release153.txt",
+      "sha256": "5eae17e87f52203e9b014bda1946f6d73cd1521bfe65cb4c933205ed9d62d710"
+    },
+    {
+      "original": "validation/review-2026-09-25/deadline-sanitize153.txt",
+      "stored": "项目文档/validation/review-2026-09-25/deadline-sanitize153.txt",
+      "sha256": "8c7f6bcf305ec4541e108ca5eea959e92d0cbcd7febc030363bae141d2888a4d"
+    },
+    {
+      "original": "validation/review-2026-09-25/frame-diagnostic-release152.txt",
+      "stored": "项目文档/validation/review-2026-09-25/frame-diagnostic-release152.txt",
+      "sha256": "8382a89a79ab6644a990becd9bc8d025895a952252b40ed054f876b86c7a6def"
+    },
+    {
+      "original": "validation/review-2026-09-25/highlight-debug153.txt",
+      "stored": "项目文档/validation/review-2026-09-25/highlight-debug153.txt",
+      "sha256": "9370b7e9170033f1ab026ef2789becb7868462749ff429d437752ecf29c66235"
+    },
+    {
+      "original": "validation/review-2026-09-25/highlight-release152.txt",
+      "stored": "项目文档/validation/review-2026-09-25/highlight-release152.txt",
+      "sha256": "62c9643032879f36ce81fa698fd9bbca1a43a43681cccc9cc428c3d8a750839d"
+    },
+    {
+      "original": "validation/review-2026-09-25/highlight-release153.txt",
+      "stored": "项目文档/validation/review-2026-09-25/highlight-release153.txt",
+      "sha256": "3e9132866b52ae0ee728db31e7d7f0e371720ea8113304ffe1b4e37980c1a0d4"
+    },
+    {
+      "original": "validation/review-2026-09-25/highlight-sanitize153.txt",
+      "stored": "项目文档/validation/review-2026-09-25/highlight-sanitize153.txt",
+      "sha256": "cc16c02bfbffbdb8fc195698872d8bc28f1c8eb77b63ef59c6cb12d399070f82"
+    },
+    {
+      "original": "validation/review-2026-09-25/tests-debug.txt",
+      "stored": "项目文档/validation/review-2026-09-25/tests-debug.txt",
+      "sha256": "e8ccd38dc52a4e5bd2b8e0cc0cd0bf05b6549459e089ff9234db67b7ceed0ede"
+    },
+    {
+      "original": "validation/review-2026-09-25/tests-release.txt",
+      "stored": "项目文档/validation/review-2026-09-25/tests-release.txt",
+      "sha256": "5982de17360cdace81a0f0375ffb71a7804d4cb0b4a5301e50c482c9c1f6f6af"
+    },
+    {
+      "original": "validation/review-2026-09-25/tests-sanitize.txt",
+      "stored": "项目文档/validation/review-2026-09-25/tests-sanitize.txt",
+      "sha256": "034d1e71fd58077fb1a0b6d22318328c2bfd84b164447425b3c458bbc78dadd7"
+    },
+    {
+      "original": "validation/review-2026-09-25/toolchain-probe-static-parent.txt",
+      "stored": "项目文档/validation/review-2026-09-25/toolchain-probe-static-parent.txt",
+      "sha256": "691e842e5dfbb90b4d66d52c07049a6552fb00d5b9c3476d9bea9f72a2863063"
+    },
+    {
+      "original": "validation/review-2026-09-25/toolchain-probe-supported.txt",
+      "stored": "项目文档/validation/review-2026-09-25/toolchain-probe-supported.txt",
+      "sha256": "f9300ecf560011125e7a838ebbcac3cb0176b0a829f75b5e7388843ace4fa7b1"
+    },
+    {
+      "original": "validation/review-2026-09-25/toolchain-probe-unavailable-headers.txt",
+      "stored": "项目文档/validation/review-2026-09-25/toolchain-probe-unavailable-headers.txt",
+      "sha256": "bab1d5f3eab2a3ed72804fa995d6027e4314b59bacc4d6dd047b42e03a99cb38"
+    }
+  ],
+  "platform_entries": [
+    ".github/SECURITY.md"
+  ]
+}
