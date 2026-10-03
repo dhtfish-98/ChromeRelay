@@ -22,5 +22,5 @@ owned page that reproduces the behavior. Prefer a temporary browser profile.
 
 Do not attach session cookies, tokens, personal browser profiles, private pages or
 unredacted screenshots. The test record concerns owned pages and temporary profiles,
-not arbitrary sites. See [getting started](../docs/GETTING_STARTED.md) and the
-[verification record](../docs/CHECKPOINT.md).
+not arbitrary sites. See [getting started](../%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3/docs/GETTING_STARTED.md) and the
+[verification record](../%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3/docs/CHECKPOINT.md).
