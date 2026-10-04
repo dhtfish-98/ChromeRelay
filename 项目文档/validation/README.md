@@ -1,5 +1,12 @@
 # Validation record
 
+> **Historical source snapshot — not the current Git HEAD.**
+> [`local-source-manifest.json`](local-source-manifest.json) preserves the accepted
+> local 1.0.0 delivery's paths, SHA-256 hashes and byte lengths. Later commits
+> changed source files and moved documentation. This manifest cannot verify the
+> current branch or a current source package; use the exact Git commit and its
+> matching build and CI evidence for current claims.
+
 The later MCP/CLI review on 2026-09-25 passed **1,556 checks in Release**:
 175 contracts, 1,149 owned-browser/MCP checks in 23 programs and 232 socket
 fault checks. The installed CLI passed 28 additional checks. Debug and
