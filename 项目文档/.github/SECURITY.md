@@ -1,6 +1,6 @@
 # Security reporting
 
-For a sensitive report, use GitHub's [private vulnerability reporting](https://github.com/dhtfish988/ChromeRelay/security/advisories/new).
+For a sensitive report, use GitHub's [private vulnerability reporting](https://github.com/dhtfish-98/ChromeRelay/security/advisories/new).
 The private reporting channel is enabled for this repository. Ordinary correctness
 bugs can be filed as public issues with private information removed. If the private
 form is unavailable, open a minimal issue asking for a reporting channel without
