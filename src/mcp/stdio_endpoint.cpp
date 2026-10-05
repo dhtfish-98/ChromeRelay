@@ -60,7 +60,7 @@ std::optional<Json> StdioEndpoint::receive(const Json &message) {
       return response({{"protocolVersion", version_},
                        {"capabilities", {{"tools", Json::object()}}},
                        {"serverInfo",
-                        {{"name", "chrome-relay"}, {"version", "1.0.0"}}}});
+                        {{"name", "chrome-relay"}, {"version", "1.0.1"}}}});
     }
     if (method == "ping")
       return response(Json::object());

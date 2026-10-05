@@ -36,7 +36,7 @@ def main():
         checks += 1
 
     result = run(['--version'])
-    check(result.returncode == 0 and result.stdout == 'ChromeRelay 1.0.0\n' and not result.stderr)
+    check(result.returncode == 0 and result.stdout == 'ChromeRelay 1.0.1\n' and not result.stderr)
     result = run(['--help'])
     check(result.returncode == 0 and '--allow-root' in result.stdout and not result.stderr)
     for option, count in [('--catalog', 54), ('--compat-catalog', 75)]:
@@ -59,7 +59,7 @@ def main():
         replies = [json.loads(line) for line in result.stdout.splitlines()]
         check(result.returncode == 0 and not result.stderr and len(replies) == 2)
         check(replies[0]['result']['protocolVersion'] == version and
-              replies[0]['result']['serverInfo']['version'] == '1.0.0' and
+              replies[0]['result']['serverInfo']['version'] == '1.0.1' and
               len(replies[1]['result']['tools']) == 54)
     messages = [
         {'jsonrpc': '2.0', 'id': 1, 'method': 'initialize', 'params': {

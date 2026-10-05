@@ -2,11 +2,16 @@
 
 # ChromeRelay
 
-**ChromeRelay 1.0.0** is a C++20 MCP-to-Chrome DevTools bridge. It connects to an
+**ChromeRelay 1.0.1** is a C++20 MCP-to-Chrome DevTools bridge. It connects to an
 existing loopback Chrome and provides 54 canonical browser actions or 75 legacy
 names. Native transport, sessions, navigation, inputs, files,
 workflows and cancellation run without a Node or Playwright runtime. Small
 embedded JavaScript adapters handle DOM access and browser-side value conversion.
+
+This source release includes later fixes and the Build/项目文档 layout. The
+1.0.0 delivery records below are historical. Exact-commit GitHub macOS CI checks
+build, tests and installation; no prebuilt binary is distributed. The intermittent
+transformed-frame hover timeout remains open.
 
 Start with [GETTING_STARTED.md](<docs/GETTING_STARTED.md>) for installation, a
 separate Chrome profile, MCP host configuration and the C++ library example.

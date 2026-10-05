@@ -30,7 +30,7 @@ int main(int argc, char **argv) {
     for (int i = 1; i < argc; ++i) {
       const std::string option = argv[i];
       if (option == "--version") {
-        std::cout << "ChromeRelay 1.0.0\n";
+        std::cout << "ChromeRelay 1.0.1\n";
         return 0;
       }
       if (option == "--catalog" || option == "--compat-catalog") {

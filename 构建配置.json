@@ -13,7 +13,7 @@
     {
       "original": "README.md",
       "stored": "项目文档/README.md",
-      "sha256": "4d441b16120a8be76d7c3c454e144418e66c109dddc892cd611fd254e5eb9832"
+      "sha256": "c6532a8d902d93ccc2c185293fba5ef71821c7b809696b70afa41018e26d5a62"
     },
     {
       "original": "THIRD_PARTY_NOTICES.md",
@@ -103,7 +103,7 @@
     {
       "original": "licenses/UltimateBrowserJS-MIT.txt",
       "stored": "项目文档/licenses/UltimateBrowserJS-MIT.txt",
-      "sha256": "1a7f8b0d98b0eac14447cdd09a6dbf649966fba78aa33a45fea6266ed21ade3e"
+      "sha256": "de926d6c22d9e061af6158b0f23146ce036bfb2a562f2f406acec2dc4bd8b298"
     },
     {
       "original": "licenses/nlohmann-json-MIT.txt",
